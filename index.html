@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>黄色×グレーホバーボタン（小さめ）</title>
+<title>リンク付き黄色×グレーボタン</title>
 <style>
   body {
     margin: 0;
@@ -17,18 +17,21 @@
 
   .btn-yellow-gray {
     position: relative;
-    padding: 10px 30px; /* 余白を小さく */
-    font-size: 16px;     /* フォントサイズを少し小さく */
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 16px;
     color: #333333;
     background-color: #FFD700;
     border: 2px solid #999999;
-    border-radius: 36px; /* 少し丸みを調整 */
+    border-radius: 36px;
     cursor: pointer;
     overflow: hidden;
     transition: all 0.35s ease;
     box-shadow: 0 3px 8px rgba(217, 180, 0, 0.4);
     letter-spacing: 1px;
     user-select: none;
+    text-decoration: none;
+    text-align: center;
   }
 
   .btn-yellow-gray:hover {
@@ -61,6 +64,6 @@
 </style>
 </head>
 <body>
-  <button class="btn-yellow-gray">メッセージを書く</button>
+  <a href="https://secure.ana-g.com/goodjobbox/message/regist.php" target="_blank" class="btn-yellow-gray" rel="noopener noreferrer">メッセージを書く</a>
 </body>
 </html>
