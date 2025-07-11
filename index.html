@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>リンク付き黄色×グレーボタン</title>
+<title>心を動かすメッセージボタン</title>
 <style>
   body {
     margin: 0;
@@ -12,58 +12,50 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
   }
 
-  .btn-yellow-gray {
+  .btn-heart {
     position: relative;
-    display: inline-block;
-    padding: 10px 30px;
-    font-size: 16px;
-    color: #333333;
-    background-color: #FFD700;
-    border: 2px solid #999999;
-    border-radius: 36px;
+    padding: 14px 36px;
+    font-size: 18px;
+    color: #444;
+    background: #fff9c4; /* やさしい黄色 */
+    border: 2px solid #ccc;
+    border-radius: 50px;
     cursor: pointer;
-    overflow: hidden;
-    transition: all 0.35s ease;
-    box-shadow: 0 3px 8px rgba(217, 180, 0, 0.4);
-    letter-spacing: 1px;
-    user-select: none;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 10px rgba(200, 180, 0, 0.2);
     text-decoration: none;
     text-align: center;
+    overflow: hidden;
   }
 
-  .btn-yellow-gray:hover {
-    background-color: #b3a300;
-    color: #f0f0f0;
-    box-shadow: 0 6px 15px rgba(179, 163, 0, 0.7);
-    transform: scale(1.07);
-  }
-
-  .btn-yellow-gray::before {
-    content: '';
+  .btn-heart::before {
+    content: '💛';
     position: absolute;
-    top: 0;
-    left: -75%;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(
-      120deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.3) 50%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    transform: skewX(-25deg);
-    transition: left 0.6s ease;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    transition: left 0.4s ease;
   }
 
-  .btn-yellow-gray:hover::before {
-    left: 125%;
+  .btn-heart:hover::before {
+    left: 14px;
+  }
+
+  .btn-heart:hover {
+    background: #fff176; /* 少し濃い黄色に */
+    color: #222;
+    box-shadow: 0 6px 20px rgba(200, 180, 0, 0.4);
+    transform: scale(1.05);
   }
 </style>
 </head>
 <body>
-  <a href="https://secure.ana-g.com/goodjobbox/message/regist.php" target="_blank" class="btn-yellow-gray" rel="noopener noreferrer">メッセージを書く</a>
+  <a href="https://secure.ana-g.com/goodjobbox/message/regist.php" target="_blank" class="btn-heart" rel="noopener noreferrer">
+    今日も誰かにありがとうを
+  </a>
 </body>
 </html>
