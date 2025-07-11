@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>黄色×グレーホバーボタン</title>
+<title>黄色×グレーホバーボタン（小さめ）</title>
 <style>
   body {
     margin: 0;
@@ -17,24 +17,24 @@
 
   .btn-yellow-gray {
     position: relative;
-    padding: 14px 44px;
-    font-size: 20px;
+    padding: 10px 30px; /* 余白を小さく */
+    font-size: 16px;     /* フォントサイズを少し小さく */
     color: #333333;
     background-color: #FFD700;
     border: 2px solid #999999;
-    border-radius: 40px;
+    border-radius: 36px; /* 少し丸みを調整 */
     cursor: pointer;
     overflow: hidden;
     transition: all 0.35s ease;
-    box-shadow: 0 4px 10px rgba(217, 180, 0, 0.4);
-    letter-spacing: 1.1px;
+    box-shadow: 0 3px 8px rgba(217, 180, 0, 0.4);
+    letter-spacing: 1px;
     user-select: none;
   }
 
   .btn-yellow-gray:hover {
     background-color: #b3a300;
     color: #f0f0f0;
-    box-shadow: 0 8px 20px rgba(179, 163, 0, 0.7);
+    box-shadow: 0 6px 15px rgba(179, 163, 0, 0.7);
     transform: scale(1.07);
   }
 
